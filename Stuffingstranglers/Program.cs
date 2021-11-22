@@ -24,10 +24,15 @@ namespace Stuffingstranglers
             Console.WriteLine("Plan Your Heist");
             Console.WriteLine("---------------");
 
-           
-            List<TeamMember> allTeamMembers = new List<TeamMember>() {
-                     
-                        };
+            int bankDifficultyLevel = 100;
+            List<Skill> allSkill = new List<Skill>()
+            {
+
+            };
+            List<TeamMember> allTeamMembers = new List<TeamMember>()
+            {
+
+            };
 
 
             while (true)
@@ -44,18 +49,19 @@ namespace Stuffingstranglers
 
                 Console.WriteLine("Enter Team Member's Courage Level");
                 double TeamMemberCourage = double.Parse(Console.ReadLine());
-                TeamMember newTeamMembers= new TeamMember(TeamMemberName, TeamMemberSkill, TeamMemberCourage);
+                TeamMember newTeamMembers = new TeamMember(TeamMemberName, TeamMemberSkill, TeamMemberCourage);
                 allTeamMembers.Add(newTeamMembers);
 
-        //          foreach(TeamMember newTeamMember in allTeamMembers){
-                     
-        //        Console.WriteLine($"Your Team Member's Name is {TeamMemberName}, their Skill Level is {TeamMemberSkill}, and their Courage Level is {TeamMemberCourage}");
-              
-        //    }
-            Console.WriteLine($"Your Team Member's Name is {TeamMemberName}, their Skill Level is {TeamMemberSkill}, and their Courage Level is {TeamMemberCourage}");
-            Console.WriteLine($"You have {allTeamMembers.Count} team members");
-            };
+                // foreach (TeamMember teamMember in allTeamMembers)
+                // {
 
+                //     Console.WriteLine($"Your Team Member's Name is {teamMember.Name}, their Skill Level is {teamMember.Skill}, and their Courage Level is {teamMember.Courage}");
+
+                // }
+
+                Console.WriteLine($"You have {allTeamMembers.Count} team members");
+            };
+            int skillSum = .Skill.Sum();
 
         }
     }
